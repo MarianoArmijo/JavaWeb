@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>ProyectoWeb</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <display-name>ServletHibernateEmployee</display-name>
+    <servlet-name>ServletHibernateEmployee</servlet-name>
+    <servlet-class>proyecto.web.ServletHibernateEmployee</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ServletHibernateEmployee</servlet-name>
+    <url-pattern>/ServletHibernateEmployee</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <display-name>ServletHibernateDepartments</display-name>
+    <servlet-name>ServletHibernateDepartments</servlet-name>
+    <servlet-class>proyecto.web.ServletHibernateDepartments</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>ServletHibernateDepartments</servlet-name>
+    <url-pattern>/ServletHibernateDepartments</url-pattern>
+  </servlet-mapping>
+  
+  <listener>
+	<listener-class>listeners.HttpSessionListener</listener-class>
+  </listener>
+  
+  <listener>
+	<listener-class>listeners.ServletContextListener</listener-class>
+  </listener>
+  
+  <listener>
+	<listener-class>listeners.ServletRequestListener</listener-class>
+  </listener>
+  
+
+  
+    
+</web-app>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Recuperar empleados por id.</title>
+</head>
+<body>
+<table border="3" center style="width:100%" bg-color="black">
+	<tr><center><img src="./web/icono-empleado.jpg" center><h1><b>Tabla de empleados</b></h1></tr>
+	<tr>
+		<td><b>Consulta de empleados mediante ID de empleado.</b></td>
+		<td>
+			<form action = "ServletHibernateEmployee" method = "GET">
+				<input type = "text" name = "ID" />
+				<input type = "submit" value = "Enviar" />
+			</form>
+		</td>
+	</tr>		
+	<tr>
+		<td><b>Consulta de empleados mediante ID de departamento.</b></td>
+		<td>
+			<form action = "ServletHibernateDepartments" method = "GET">
+				<select name="ID">
+					<option value="Administration">Administration</option>
+					<option value="Marketing">Marketing</option>
+					<option value="Purchasing">Purchasing</option>
+					<option value="Human Resources">Human Resources</option>
+					<option value="Shipping">Shipping</option>
+					<option value="IT">IT</option>
+					<option value="Public Relations">Public Relations</option>
+					<option value="Sales">Sales</option>
+					<option value="Executive">Executive</option>
+					<option value="Finance">Finance</option>
+					<option value="Accounting">Accounting</option>
+				</select>
+					<input type = "submit" value = "Enviar" />
+			</form>
+		</td>
+	</tr>		
+	</table>
+</body>
+</html>
